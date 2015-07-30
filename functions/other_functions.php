@@ -56,7 +56,7 @@
 												"body_html" : "'.$i->description.'",
 												"tags" : "'.$i->tag_list.'"
 											}
-										}'; //NOTE: variants can't be updated even in postman, quantity tag is under variants field
+										}'; //variants can't be updated even in postman, quantity tag is under variants field
 										echo $i->name." was successfully updated in Shopify with ".$quantity." stock/s<br>";
 										$put_url_shopify = 'https://'.$_SESSION['shopify_shop_name'].'.myshopify.com/admin/products/'.$exists[0].'.json';
 										$shopify = put_shopify($put_url_shopify, $json, $http_header_post);

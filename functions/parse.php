@@ -14,9 +14,9 @@
 	// ------------------ Function for printing modal when "Selected Products" button is clicked ------------------//
 	function print_modal($array){
 		echo "<h5>Select Tagged Products</h5><hr>";
-		echo '<p><input type="checkbox" class="filled-in" onclick="checkAll(this)" name="checkall" id="checkall"/><label style="font-size:19;" for="checkall">Select all</label></p><hr>';
-		foreach($array as $i){ if($i == null){ echo '<input type="checkbox" class="filled-in" value="notag" name="notag" id="notag"/><label style="font-size:19;" for="notag">Select products with no tag</label><br>';}}
-		foreach($array as $i){ if($i != null){ echo '<p><input value="'.$i.'" name="checkbox[]" type="checkbox" class="filled-in" id="'.$i.'"/><label style="font-size:19;" for="'.$i.'">'.$i.'</label></p>';}}
+		echo '<p><input type="checkbox" class="filled-in" onclick="checkAll(this)" name="checkall" id="checkall"/><label for="checkall" style="color:black;font-size:110%;">Select all</label></p>';
+		foreach($array as $i){ if($i == null){ echo '<input type="checkbox" class="filled-in" value="notag" name="notag" id="notag"/><label for="notag" style="color:black;font-size:110%;">Select products with no tag</label><br><br>';}}
+		foreach($array as $i){ if($i != null){ echo '<p><input value="'.$i.'" name="checkbox[]" type="checkbox" class="filled-in" id="'.$i.'"/><label for="'.$i.'" style="color:black;font-size:110%;">'.$i.'</label></p>';}}
 		echo "<script> $('#modal_tagged').openModal(); </script>";	
 	}
 	// -------------- modal for products, customers and invoices -----------//

@@ -7,7 +7,6 @@
 	if(!isset($_SESSION['imonggo_token'])){ 
 		header("Location:../index.php");
 	}
-	
 ?>
 
 
@@ -77,20 +76,11 @@
 								  </div>
 								 </form>
 
-
-
-
-
-
-
-
-
-
 <!-- service section -->
 
 <div id="service">
 	<div class="container">
-				<h1>Our <span class="highlight">Service</span></h1>
+				<h1>Our <span class="highlight">Services</span></h1>
                 <div class="row">		
 				<form method="GET">
 					<div class="col-md-3 col-sm-3 wow slideInLeft">
@@ -99,7 +89,7 @@
 								<i class="fa fa-signal"></i>
 							</div>
 							<h3>All Products</h3>
-							<p>Epsum factorial non deposit quid pro quo hic escorol.Epsum factorial non deposit quid pro.</p>
+							<p>Post all products of Imonggo to Shopify regardless of their tags.</p>
 						</button>
 					</div>
 					
@@ -109,7 +99,7 @@
 								<i class="fa fa-home"></i>
 							</div>
 							<h3>Selected Products</h3>
-							<p>Epsum factorial non deposit quid pro quo hic escorol.Epsum factorial non deposit quid pro.</p>
+							<p>Products are filtered by tags before posting them to Shopify.</p>
 						</button>
 					</div>
 				</form>
@@ -121,7 +111,7 @@
 								<i class="fa fa-building"></i>
 							</div>
 							<h3>Customers</h3>
-							<p>Epsum factorial non deposit quid pro quo hic escorol.Epsum factorial non deposit quid pro.</p>
+							<p>Post all enabled customers of Shopify to Imonggo.</p>
 						</button>
 					</div>
 					
@@ -131,7 +121,7 @@
 								<i class="fa fa-th"></i>
 							</div>
 							<h3>Invoices</h3>
-							<p>Epsum factorial non deposit quid pro quo hic escorol.Epsum factorial non deposit quid pro.</p>
+							<p>All transactions made in Shopify will be posted to Imonggo.</p>
 						</button>
 					</div>
 				</form>
